@@ -1,0 +1,173 @@
+/* Section CSS */
+:root {
+  --red: red;
+  --bg: black;
+  --shadow: 0 2px 2px rgb(85 38 38 / 0.5);
+}
+body {
+  font-size: 1.2rem;
+  font-family: "Barlow", sans-serif;
+  min-height: 8000px;
+}
+/* Background-Image */
+.satya::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../foto/bg-cdng.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+.satya {
+  position: relative;
+  min-height: 100vh;
+}
+.satya h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 4.5rem;
+  text-shadow: var(--shadow);
+}
+.satya p {
+  font-size: 1rem;
+  text-shadow: var(--shadow);
+}
+.satya h4 {
+  font-size: 1.2rem;
+  text-shadow: var(--shadow);
+}
+.satya a {
+  color: var(--red);
+  background-color: rgb(40, 40, 40);
+  box-shadow: var(--shadow);
+}
+.satya a:hover {
+  color: rgb(40, 40, 40);
+  background-color: var(--red);
+  text-shadow: var(--shadow);
+}
+/* NavBar CSS */
+.mynavbar {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  backdrop-filter: blur(4px);
+}
+.mynavbar .offcanvas {
+  height: 100vh;
+}
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+}
+.mynavbar .offcanvas-title {
+  font-size: 2rem;
+}
+/* .mynavbar .nav-link {
+  text-transform: uppercase;
+} */
+.home {
+  margin-top: -6rem;
+  background-color: bisque;
+  padding-top: 15rem;
+  padding-bottom: 5rem;
+}
+.home h2,
+h3,
+p {
+  font-family: "Barlow", sans-serif;
+}
+.home .couple {
+  margin-top: 100px;
+}
+.home .couple h3 {
+  font-family: "Barlow", sans-serif;
+}
+.home .couple img {
+  width: 100%;
+}
+.home .heart {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(65px);
+}
+.home .heart i {
+  margin: auto;
+  color: var(--red);
+}
+.info {
+  background-color: var(--bg);
+  color: white;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+.info h2 {
+  color: var(--red);
+  font-family: "Barlow", sans-serif;
+  font-size: 5rem;
+}
+.info .alamat {
+  font-size: 1.1rem;
+}
+.info .description {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.info .card {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  color: white !important;
+  border: 1px solid white;
+}
+.info .card-header {
+  border-bottom: 1px solid white;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+.info .card-body {
+  font-size: 1rem;
+}
+.info .card-footer {
+  border-top: 1px solid white;
+  letter-spacing: 0.1rem;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+/* Media Open */
+/* Extra Large */
+@media (max-width: 1200px) {
+  .home .heart {
+    transform: translateX(-50%) translateY(45px);
+  }
+}
+/* Laptop/PC/Komputer */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+  .home .heart {
+    display: none;
+  }
+}
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+  .mynavbar .nav-link {
+    font-size: 1.5rem;
+  }
+}
+/* Handphone */
+@media (max-width: 576px) {
+  html {
+    font-size: 60%;
+  }
+}
